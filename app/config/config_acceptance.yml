@@ -20,4 +20,4 @@ csa_guzzle:
 
 
 parameters:
-    database_name: "db_acceptance"
+    database_name: "code_review_db_rest_user_api_acceptance"
