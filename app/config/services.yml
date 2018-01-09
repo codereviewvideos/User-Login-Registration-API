@@ -5,12 +5,12 @@ parameters:
 
 services:
 
-    event.jwt_created_listener:
-        class: AppBundle\Event\Listener\JWTCreatedListener
-        arguments:
-            - "@security.token_storage"
-        tags:
-            - { name: kernel.event_listener, event: lexik_jwt_authentication.on_jwt_created, method: onJWTCreated }
+#    event.jwt_created_listener:
+#        class: AppBundle\Event\Listener\JWTCreatedListener
+#        arguments:
+#            - "@security.token_storage"
+#        tags:
+#            - { name: kernel.event_listener, event: lexik_jwt_authentication.on_jwt_created, method: onJWTCreated }
 
     user.mailer.rest:
         class: AppBundle\Mailer\RestMailer
